@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c322pop14eswx"]
+
+[ext_resource type="PackedScene" uid="uid://o368d1kj4d3a" path="res://muti_material_mesh.glb" id="1_tjek6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jgdjh"]
+resource_name = "Material.004"
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(0.906332, 0, 0.0977302, 1)
+
+[node name="muti_material_mesh" instance=ExtResource("1_tjek6")]
+
+[node name="Plane_001" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_jgdjh")
+
+[node name="Camera3D" type="Camera3D" parent="." index="2"]
+transform = Transform3D(-0.288365, 0.931342, -0.222368, 0.112012, 0.26345, 0.958148, 0.950946, 0.251389, -0.180291, 0, 0.762189, -1.40192)
